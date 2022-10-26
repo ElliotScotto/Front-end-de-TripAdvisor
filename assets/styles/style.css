@@ -186,25 +186,46 @@ h2 {
   font-family: "Times New Roman", Times, serif;
   font-size: 20px;
 }
+/* Style du carrousel */
 .carrousel {
   height: 300px;
   background-color: beige;
   display: flex;
   border: black solid 1px;
+  flex-shrink: 0;
+  gap: 15px;
 }
-.carrousel .descriptionblock {
-  flex: 1;
-  border: black solid 1px;
+.blockdetails {
+  background-color: mistyrose;
 }
-.carrousel .carrouselpicture1 {
+.block {
   flex: 1;
-  border: black solid 1px;
+  background-color: pink;
+  display: flex;
+  flex-direction: column;
 }
-.carrousel .carrouselpicture2 {
-  flex: 1;
-  border: black solid 1px;
+.block .block-top {
+  background-color: orange;
+  flex: 2;
+  position: relative;
 }
-.carrousel .carrouselpicture3 {
+.block .block-top img {
+  position: absolute;
+  background-color: white;
+  max-height: 13%;
+  max-width: 13%;
+  padding: 2%;
+  top: 5%;
+  right: 5%;
+  border-radius: 50%;
+}
+.block .block-bottom {
   flex: 1;
-  border: black solid 1px;
+  background-color: blue;
+}
+.carrousel .block .block-bottom h4 {
+  font-size: 20px;
+}
+.carrousel .block .block-bottom p {
+  font-size: 14px;
 }
