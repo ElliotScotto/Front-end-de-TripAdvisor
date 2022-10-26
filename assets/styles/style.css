@@ -1,7 +1,106 @@
-.medium {
+body {
+  font-family: "Trip Sans Regular";
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  background: lavender;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+header img {
+  width: 200px;
+}
+
+.primary-nav {
+  display: flex;
+  align-items: center;
+  gap: 15px;
   font-family: "Trip Sans Medium";
 }
 
-.regular {
-  font-family: "Trip Sans Regular";
+.primary-nav .menu-item {
+  /* background: red; */
+  padding: 15px;
+}
+
+.primary-nav button {
+  font-size: 14px;
+  background: black;
+  color: white;
+  padding: 15px;
+  border-radius: 20px;
+  cursor: pointer;
+  border: none;
+}
+
+h1 {
+  margin-top: 25px;
+  font-size: 54px;
+  font-family: "Trip Sans Medium";
+}
+
+h1 span {
+  color: #ff5d5d;
+}
+
+.secondary-nav {
+  display: flex;
+  margin-top: 20px;
+  gap: 20px;
+}
+
+.secondary-nav p {
+  flex: 1;
+  height: 25px;
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.images {
+  /* background: salmon; */
+  margin-top: 50px;
+  height: 400px;
+  display: flex;
+  gap: 2px;
+}
+
+.images .left {
+  flex: 4;
+  /* background: blue; */
+  background-image: url("../img/caption1.jpg");
+}
+
+.images .right {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.images .right-top {
+  /* background: green; */
+  background-image: url("../img/caption2.jpg");
+
+  flex: 1;
+}
+
+.images .right-bottom {
+  /* background: yellow; */
+  background-image: url("../img/caption3.jpg");
+  flex: 1;
+}
+
+.images .center-background {
+  background-size: cover;
+  background-position: center;
 }
