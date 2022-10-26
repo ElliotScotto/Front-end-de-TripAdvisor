@@ -5,7 +5,7 @@ body {
 .container {
   max-width: 1140px;
   margin: 0 auto;
-  background: lavender;
+  background-color: lightsteelblue;
 }
 
 header {
@@ -23,7 +23,11 @@ header img {
   gap: 15px;
   font-family: "Trip Sans Medium";
 }
-
+.menu-item img {
+  background-color: #ff5d5d;
+  height: 20px;
+  width: 20px;
+}
 .primary-nav .menu-item {
   /* background: red; */
   padding: 15px;
@@ -48,24 +52,51 @@ h1 {
 h1 span {
   color: #ff5d5d;
 }
-
+.titleunderexplore {
+  font-size: 14px;
+  color: #414141;
+  margin-top: 15px;
+  display: flex;
+  background-color: azure;
+}
+h3 {
+  background-color: antiquewhite;
+}
+.titleunderexplore .learnmore {
+  background-color: aliceblue;
+  color: #414141;
+  text-decoration: underline;
+}
+.learmore:hover {
+  text-decoration: underline;
+}
+.learmore h3:visited {
+  text-decoration: none;
+}
 .secondary-nav {
+  background-color: azure;
   display: flex;
   margin-top: 20px;
   gap: 20px;
 }
 
 .secondary-nav p {
+  background-color: blanchedalmond;
   flex: 1;
-  height: 25px;
+  height: 35px;
   padding: 15px;
   border-radius: 10px;
   border: 1px solid black;
   display: flex;
   justify-content: space-between;
   cursor: pointer;
+  align-items: top;
+  gap: 10px;
 }
-
+.secondary-nav p:hover {
+  background-color: black;
+  color: white;
+}
 .images {
   /* background: salmon; */
   margin-top: 50px;
