@@ -196,8 +196,30 @@ h2 {
   gap: 15px;
 }
 .blockdetails {
+  flex: 1;
   background-color: mistyrose;
 }
+.blockdetails {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 18px;
+  line-height: 20px;
+  color: #333333;
+}
+.blockdetails .showall {
+  color: #333333;
+  text-decoration: underline;
+}
+.blockdetails a:hover {
+  text-decoration: underline;
+  filter: opacity(75%);
+}
+.blockdetails h4 {
+  font-family: Trip Sans Medium;
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: black;
+}
+
 .block {
   flex: 1;
   background-color: pink;
@@ -212,8 +234,8 @@ h2 {
 .block .block-top .heart {
   position: absolute;
   background-color: white;
-  max-height: 25%;
-  max-width: 25%;
+  max-height: 20%;
+  max-width: 20%;
   padding: 2px;
   top: 2%;
   right: 2%;
