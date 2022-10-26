@@ -205,18 +205,26 @@ h2 {
   flex-direction: column;
 }
 .block .block-top {
-  background-color: orange;
+  background-color: lightgreen;
   flex: 2;
   position: relative;
 }
-.block .block-top img {
+.block .block-top .heart {
   position: absolute;
   background-color: white;
-  max-height: 13%;
-  max-width: 13%;
-  padding: 2%;
-  top: 5%;
-  right: 5%;
+  max-height: 25%;
+  max-width: 25%;
+  padding: 2px;
+  top: 2%;
+  right: 2%;
+  border-radius: 50%;
+}
+.block .block-top .tripadgif {
+  position: absolute;
+  max-height: 33%;
+  max-width: 33%;
+  bottom: 2%;
+  left: 2%;
   border-radius: 50%;
 }
 .block .block-bottom {
@@ -225,7 +233,17 @@ h2 {
 }
 .carrousel .block .block-bottom h4 {
   font-size: 20px;
+  margin-bottom: 5px;
 }
 .carrousel .block .block-bottom p {
+  font-size: 14px;
+}
+.carrousel .block-top:hover {
+  filter: opacity(80%);
+}
+.carrousel .block-bottom .rate .logorated {
+  max-height: 17px;
+}
+.numberrated {
   font-size: 14px;
 }
