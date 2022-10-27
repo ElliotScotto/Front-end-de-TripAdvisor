@@ -1,11 +1,12 @@
 body {
   font-family: "Trip Sans Regular";
+  padding: 25px 25px;
 }
 
 .container {
+  padding-top: 10px 10px;
   max-width: 1140px;
   margin: 0 auto;
-  background-color: lightsteelblue;
 }
 
 header {
@@ -67,13 +68,10 @@ h1 span {
   color: #414141;
   margin-top: 15px;
   display: flex;
-  background-color: azure;
 }
 h3 {
-  background-color: antiquewhite;
 }
 .titleunderexplore .learnmore {
-  background-color: aliceblue;
   color: #414141;
   text-decoration: underline;
 }
@@ -84,7 +82,6 @@ h3 {
   text-decoration: none;
 }
 .secondary-nav {
-  background-color: azure;
   display: flex;
   margin-top: 20px;
   gap: 10px;
@@ -170,7 +167,6 @@ h3 {
 }
 .imagescredits p {
   color: #414141;
-  background-color: #ff5d5d;
 }
 .imagescredits a {
   color: #414141;
@@ -182,7 +178,6 @@ h3 {
 }
 h2 {
   margin-top: 40px;
-  background-color: aquamarine;
   margin-bottom: 15px;
   font-family: Arial, Tahoma, Vera Sans;
   font-size: 28px;
@@ -190,7 +185,6 @@ h2 {
   color: black;
 }
 .textcity {
-  background-color: cadetblue;
   color: #333333;
   font-family: "Times New Roman", Times, serif;
   font-size: 20px;
@@ -367,4 +361,22 @@ h2 {
   overflow: auto;
   -ms-overflow-style: none; /* IE 11 */
   scrollbar-width: none; /* Firefox 64 */
+}
+
+/* RESPONSIVE */
+@media (max-width: 1184px) {
+}
+@media (max-width: 1024px) {
+}
+@media (max-width: 768px) {
+  .primary-nav .menu-item span {
+    display: none;
+  }
+}
+@media (max-width: 425px) {
+}
+@media (width: 1920px) {
+  .secondary-nav {
+    position: fixed;
+  }
 }
