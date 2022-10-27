@@ -231,18 +231,21 @@ h2 {
   flex: 2;
   position: relative;
   background-image: url(../img/eiffeltoren.jpg);
+  background-size: contain;
 }
 .block .block-top2 {
   background-color: lightgreen;
   flex: 2;
   position: relative;
   background-image: url(../img/cour-napoleon-et-pyramide.jpg);
+  background-size: contain;
 }
 .block .block-top3 {
   background-color: lightgreen;
   flex: 2;
   position: relative;
   background-image: url(../img/arc-de-triomphe-at-night.jpg);
+  background-size: contain;
 }
 
 .block .block-top1 .heart {
