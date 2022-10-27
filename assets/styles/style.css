@@ -24,26 +24,35 @@ header img {
   font-family: "Trip Sans Medium";
 }
 .menu-item img {
-  background-color: #ff5d5d;
+  /* background-color: #ff5d5d; */
   height: 20px;
   width: 20px;
 }
 .primary-nav .menu-item {
-  /* background: red; */
-  padding: 15px;
+  background-color: none;
+  border-radius: 20px;
+  padding: 8px;
+}
+/* background: red; */
+.primary-nav .menu-item:hover {
+  background-color: #efefef;
+  transition: 250ms ease-in-out;
 }
 
 .primary-nav button {
   font-size: 14px;
-
   background: black;
   color: white;
   padding: 15px;
   border-radius: 20px;
-  cursor: pointer;
   border: none;
 }
-
+.primary-nav button:hover {
+  background-color: #333333;
+  cursor: pointer;
+  border: none;
+  transition: 250ms ease-in-out;
+}
 h1 {
   margin-top: 25px;
   font-size: 54px;
@@ -85,7 +94,7 @@ h3 {
 .secondary-nav p {
   min-width: 140px;
   max-width: 160px;
-  background-color: blanchedalmond;
+  background-color: white;
   flex: 1;
   height: 35px;
   padding: 15px;
@@ -102,8 +111,8 @@ h3 {
   max-height: 60%;
 }
 .secondary-nav p:hover {
-  background-color: black;
-  color: white;
+  filter: invert(100%);
+  transition: 250ms ease-in-out;
 }
 .images {
   /* background: salmon; */
@@ -189,14 +198,13 @@ h2 {
 /* Carousel de photos */
 .carrousel {
   height: 300px;
-  background-color: beige;
+
   display: flex;
   border: black solid 1px;
   gap: 15px;
 }
 .blockdetails {
   flex: 1;
-  background-color: mistyrose;
 }
 .blockdetails {
   font-family: "Times New Roman", Times, serif;
@@ -223,7 +231,7 @@ h2 {
 .block {
   flex-direction: column;
   flex: 1;
-  background-color: pink;
+
   display: flex;
 }
 .block .block-top1 {
@@ -304,7 +312,6 @@ h2 {
 }
 .block .block-bottom {
   flex: 1;
-  background-color: blue;
 }
 .carrousel .block .block-bottom h4 {
   font-size: 20px;
@@ -321,4 +328,43 @@ h2 {
 }
 .numberrated {
   font-size: 14px;
+}
+/* Deuxième genre de carousel */
+.secondcarousel {
+  height: 300px;
+  background-color: pink;
+  display: flex;
+}
+.firstcolumn {
+  background-color: green;
+  flex: 1;
+}
+.secondcolumn {
+  flex: 3;
+  background-color: blue;
+  display: flex;
+  overflow-x: scroll;
+  gap: 15px;
+}
+.carouselblock {
+  flex: calc((100% / 3)-10px);
+  flex-shrink: 0;
+}
+.carouselblock-top {
+  height: calc(75%);
+  background-color: red;
+}
+.carouselblock-top img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.carouselblock-bottom {
+  height: calc(25%);
+  background-color: yellow;
+}
+.hide-scrollbar {
+  overflow: auto;
+  -ms-overflow-style: none; /* IE 11 */
+  scrollbar-width: none; /* Firefox 64 */
 }
