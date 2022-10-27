@@ -186,13 +186,12 @@ h2 {
   font-family: "Times New Roman", Times, serif;
   font-size: 20px;
 }
-/* Style du carrousel */
+/* Carousel de photos */
 .carrousel {
   height: 300px;
   background-color: beige;
   display: flex;
   border: black solid 1px;
-  flex-shrink: 0;
   gap: 15px;
 }
 .blockdetails {
@@ -220,28 +219,79 @@ h2 {
   color: black;
 }
 
+/* .bloc => Concerne les 3 Blocs du carroussel */
 .block {
+  flex-direction: column;
   flex: 1;
   background-color: pink;
   display: flex;
-  flex-direction: column;
 }
-.block .block-top {
+.block .block-top1 {
   background-color: lightgreen;
   flex: 2;
   position: relative;
+  background-image: url(../img/eiffeltoren.jpg);
 }
-.block .block-top .heart {
+.block .block-top2 {
+  background-color: lightgreen;
+  flex: 2;
+  position: relative;
+  background-image: url(../img/cour-napoleon-et-pyramide.jpg);
+}
+.block .block-top3 {
+  background-color: lightgreen;
+  flex: 2;
+  position: relative;
+  background-image: url(../img/arc-de-triomphe-at-night.jpg);
+}
+
+.block .block-top1 .heart {
   position: absolute;
   background-color: white;
-  max-height: 20%;
-  max-width: 20%;
-  padding: 2px;
+  max-height: 16%;
+  max-width: 16%;
+  padding: 10px;
   top: 2%;
   right: 2%;
   border-radius: 50%;
 }
-.block .block-top .tripadgif {
+.block .block-top1 .tripadgif {
+  position: absolute;
+  max-height: 33%;
+  max-width: 33%;
+  bottom: 2%;
+  left: 2%;
+  border-radius: 50%;
+}
+.block .block-top2 .heart {
+  position: absolute;
+  background-color: white;
+  max-height: 16%;
+  max-width: 16%;
+  padding: 10px;
+  top: 2%;
+  right: 2%;
+  border-radius: 50%;
+}
+.block .block-top2 .tripadgif {
+  position: absolute;
+  max-height: 33%;
+  max-width: 33%;
+  bottom: 2%;
+  left: 2%;
+  border-radius: 50%;
+}
+.block .block-top3 .heart {
+  position: absolute;
+  background-color: white;
+  max-height: 16%;
+  max-width: 16%;
+  padding: 10px;
+  top: 2%;
+  right: 2%;
+  border-radius: 50%;
+}
+.block .block-top3 .tripadgif {
   position: absolute;
   max-height: 33%;
   max-width: 33%;
