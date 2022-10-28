@@ -7,7 +7,6 @@ body {
   padding-top: 10px 10px;
   max-width: 1140px;
   margin: 0 auto;
-  border: solid 1px black;
 }
 
 header {
@@ -387,6 +386,11 @@ h2 {
 @media (max-width: 1024px) {
 }
 @media (max-width: 768px) {
+  .secondary-nav {
+    flex: calc ((100%/4));
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+  }
   .primary-nav .menu-item span {
     display: none;
   }
@@ -396,4 +400,7 @@ h2 {
   }
 }
 @media (max-width: 425px) {
+  .primary-nav .menu-item {
+    display: none;
+  }
 }
